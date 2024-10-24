@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buff Admission Form</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <style>
+      .container {
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+      }
+
+      .logo3 {
+        flex-wrap: wrap;
+        margin-top: 1%;
+        margin-left: -4%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .logo4 {
+        width: 35%;
+      }
+    </style>
+    <style>
+      .ministry {
+        justify-content: center;
+        background-color: white;
+        margin-top: -9%;
+        margin-left: 19%;
+      }
+    </style>
+    <style>
+      .american {
+        margin-top: -1%;
+        margin-left: 2.5%;
+      }
+    </style>
+    <style>
+      .admission {
+        margin-left: 40%;
+      }
+    </style>
+    <style>
+      .cityselect {
+        background-color: white;
+        margin-left: 27.5%;
+        margin-top: -1%;
+        font-size: 18px;
+      }
+    </style>
+    <style>
+      .roll {
+        margin-left: 54%;
+      }
+    </style>
+
+    <style>
+      .blood {
+        margin-left: 49%;
+      }
+    </style>
+    <style>
+      .smallbox {
+        height: auto;
+        width: 70px;
+        background-color: white;
+      }
+    </style>
+    <style>
+      .firstpage {
+        line-height: 2;
+      }
+    </style>
+    <style>
+      .pincode {
+        margin-left: 47.5%;
+      }
+    </style>
+    <style>
+      .country {
+        margin-left: 49%;
+      }
+      .table,
+      tr,
+      input:focus {
+        outline: none;
+        outline-color: white;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo3">
+        <img
+          src="images/isologo (1).svg"
+          class="logo4"
+          alt="Buff Creative College"
+        />
+      </div>
+      <div class="ministry">
+        <p>
+          Ministry of Corporate Affairs (Govt. Of India) Reg : CIN :
+          U80301TN2022PTC151960
+        </p>
+      </div>
+      <div class="american">
+        <p>
+          Reg. Under: MSME (Govt. of India) UDYAM-TN-08-0040357 | An ISO
+          9001:2015 Certified by the American Board of Accreditation
+        </p>
+      </div>
+      <div>
+        <hr />
+      </div>
+      <h2 class="admission">Admission Form</h2>
+      <div class="cityselect">
+        <input type="checkbox" name="Chennai" id="Chennai" />
+        <label for="Chennai">Chennai</label>
+        <input type="checkbox" name="Coimbatore" id="Coimbatore" />
+        <label for="Coimbatore">Coimbatore</label>
+        <input type="checkbox" name="Madurai" id="Madurai" />
+        <label for="Madurai">Madurai</label>
+        <input type="checkbox" name="Nagercoil" id="Nagercoil" />
+        <label for="Nagercoil">Nagercoil</label>
+      </div>
+      <br />
+      <form style="margin-top: 5px">
+        <label for="Date Of Joining">Date Of Joining : </label>
+        <input type="date" />
+        <label class="roll" for="Roll Number">Roll Number : </label>
+        <input class="smallbox" type="number" />
+      </form>
+      <p>
+        <strong style="font-size: 160%">Basic details of the Canditate</strong
+        ><small> (To be filled with block letters)</small>
+      </p>
+      <div class="firstpage">
+        <form>
+          <label for="Name"> Name of the Applicant : </label>
+          <input type="text" placeholder="Enter your name" /><br />
+
+          <label for="Aadhar"> Aadhar Card No : </label>
+          <input type="number" maxlength="12" /><br />
+          <label for="Nationality"> Nationality : </label>
+          <input type="text" /><br />
+
+          <label for="Gender">Gender :</label>
+          <select name="gender" id="Gender">
+            <option value="Choose">Choose</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value=" Other">Other</option></select
+          ><br />
+          <label for="Course name">Course Name : </label>
+          <input type="text" /><br />
+          <label for="DOB"> Date of Birth : </label>
+          <input type="date" name="DD/MM/YYYY" id="DD/MM/YYYY" /><br />
+          <label for="mothertounge">Mother Tounge</label>
+          <input type="text" name="Mother Tounge" id="Mother Tounge" />
+          <label class="blood" for="Blood Group">Blood Group : </label>
+          <input class="smallbox" type="text" />
+          <br />
+          <label for="email"> Email Address (Mandatory) : </label>
+          <input type="email" />
+          <br />
+          <label for="Mob-num">Mobile Number : </label>
+          <input
+            type="tel"
+            placeholder="123-456-7890"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            maxlength="10"
+            required
+          />
+          <br />
+          <label for="Father">Father / Mother / Guardian / Kin Name : </label>
+          <input type="text" /><br />
+          <label for="Occupation">Occupation : </label>
+          <input type="text" /><br />
+          <label for="Parent-number"
+            >Parent / Guardian / Next of Kin Mobile Number :
+          </label>
+          <input
+            type="tel"
+            placeholder="123-456-7890"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            maxlength="10"
+            required
+          /><br />
+          <label for="District">District : </label>
+          <input type="text" maxlength="6" />
+          <label class="pincode" for="pincode">Pincode : </label>
+          <input type="number" /><br />
+          <label for="state">State : </label>
+          <input type="text" />
+          <label class="country" for="Country">Country : </label>
+          <input type="text" /><br />
+          <strong style="font-size: 160%">Educatioal History</strong>
+          <p style="margin-top: 5px;">
+            Please list all schools, colleges, university including the
+            institution you have completed.
+          </p>
+          <table border="1px">
+            <tr style="outline: none; border: 0">
+              <th>Course</th>
+              <th>Institute(Name & Location)</th>
+              <th>Medium of Instruction</th>
+              <th>Month & Year of Passing</th>
+              <th>Percentage / CGPA / Grade</th>
+            </tr>
+            <tr class="table" style="height: 35px">
+              <td>
+                <input type="text" style="outline: none; border: 0" />
+              </td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+            </tr>
+            <tr style="height: 35px">
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+            </tr>
+            <tr style="height: 35px">
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+            </tr>
+            <tr style="height: 35px">
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+              <td><input type="text" style="outline: none; border: 0" /></td>
+            </tr>
+          </table>
+          <strong style="font-size: 160%">Employement History</strong><br />
+          <label>(a) Whether Employed</label>
+          <input type="checkbox" />
+          <label for="Yes">Yes</label>
+          <input type="checkbox" />
+          <label for="No">No</label><br />
+          <label for=""
+            >(b) If yes, how many years of full-time work experience do you
+            have? <input style="width: 400px" type="text" /></label
+          ><br />
+          <label for=""
+            >(c) Please describe the most recent full time position you have has
+            which lasted at least 12 months.</label
+          ><br />
+          <label for="">Employer : </label>
+          <input style="width: 240px" type="text" /><br />
+          <label for="">From (Date) : </label> <input type="date" />
+          <label for="">To (Date) ; </label>
+          <input type="date" /><br />
+          <label for="">Designation : </label>
+          <input type="text" /><br />
+          <strong style="font-size: 160%"
+            >Specific Details of the Candidate</strong
+          ><br />
+          <label for="">(a) Differently Abled </label>
+          <input style="margin-left: 2%" type="checkbox" />
+          <label for="Yes">Yes</label>
+          <input type="checkbox" />
+          <label for="No">No</label>
+          <label style="margin-left: 5%" for="">If yes,</label>
+          <input type="text" /><br />
+          <label for="">(b) Medical Information </label><br />
+          <label style="margin-left: 2.3%" for=""
+            >Do you have any Medical Conditions?
+          </label>
+          <input style="margin-left: 2%" type="checkbox" />
+          <label for="Yes">Yes</label>
+          <input type="checkbox" />
+          <label for="No">No</label>
+          <label style="margin-left: 5%" for="">If yes, </label>
+          <input type="text" /><br>
+          <strong style="font-size: 160%"> Enrollment Declaration: </strong>
+          <ul style="margin-top: 5px;" >
+            <li>
+              By enrolling in our cources, you acknowledge and agree to the
+              following
+            </li>
+            <li>
+              You certify that allthe information provided during enrollment is
+              complete, accurate and current.
+            </li>
+            <li>
+              It is your resonsibility to ensure that all fee are paid by their
+              respective due dates.
+            </li>
+          </ul>
+          <strong style="font-size: 160%"> Terms and Conditions:</strong>
+          <ul style="margin-top: 5px;">
+            <li>
+              Replublishing, selling or redistributing material from Buff
+              Creative College is strictly prohibited.
+            </li>
+            <li>Admision to courses is at the discretion of the management.</li>
+            <li>
+              students must a recent passport-size photograph at the time of
+              admission.
+            </li>
+            <li>
+              Stuednts are expected to follow the code of conduct outlined in
+              the rules and regulations.
+            </li>
+            <li>
+              Syllabus and materials are prepared according to industry
+              standards, and students cannot request alternations.
+            </li>
+          </ul>
+          <strong style="font-size: 160% "> Withdraw and Refunds:</strong>
+          <ul>
+            <li>
+              Fee once paid are non-refundable, non-returnable and
+              non-transferable.
+            </li>
+          </ul>
+          <strong style="font-size: 160%"> Exam Policy:</strong>
+          <ul "margin-top: 5px;">
+            <li>
+              Canditates are required to confirm their Exam timetables and
+              circulars promptly upon notification.
+            </li></ul>
+          
+          <strong style="font-size: 160%"> Certification process:</strong>
+          <p style="margin-top: 5px;">Upon completing theory exams and case studies for the subjects
+            taught, documentation must be submitted in either digital ot printed
+            format to the designated authority or campus to receive:</p>
+           
+            <li>A course completion certificate</li>
+            <li>A statement of marks</li>
+            <li>Internship certificate for clearly defined courses at the time of enrollment</li>
+           </ul>
+           <strong style="font-size: 160%;" >Pleasement Support and Norms:</strong>
+           <ul style="margin-top: 10px;"><li>You are provided with lifetime access to placement support and assistance within the campus.</li>
+          <li>Placement follows specific norms based on continues assessment within the campus and relevant subjects.</li></ul>
+          <p><strong style="font-size: 160%;">Interview preparation: </strong> <br>
+            Our dedicated placement team timelessly prepares you to excel in any interview, whether facilitated by us or sought independently.</p>
+            <strong style="font-size: 160%;" > Contact Information: </strong>
+            <p style="margin-top: -1%;" >For assistance or clarification, contact us at info@buffcreativecollege.com</p>
+            <strong style="font-size: 160%;"> Applicant Declaration </strong>
+            <p style="margin-top: -0.8%;"> By submitting the admission form,</p>
+            <ul><li style="margin-top: -1.5%;">I confirm that I have read, understand and agreed to te terms and Conditionsouotlined by Buff Creative College.</li>
+            <li>I also affirm the completion of all sections of the admission form and my aggreement with the declaration above</li>
+          <li>I understand and agree that there are no refunds for the course fee I paid.</li></ul>
+          <label for="Date">Date :</label>
+          <input type="date">
+          
+          <input style="margin-left: 53%;" type="file">
+          <label style="margin-left: 73.5%;" for="Sign">Applicant's Signature</label><br>
+          <br>
+          <hr>
+          <h2 style="margin-left: 37%;" >For Office Use Only</h2>         
+           <strong style="font-size: 160%;" > List of Documents</strong>
+          <p style="margin-top: -0.4%;">Students are required to produce all neccessary documents as applicable.</p>
+          <p style="margin-top: -1.8%;" >All fields and documents provided will be checked for accuracy and completeness with orginals.</p>
+          <input type="checkbox"> <label for="">Passport</label>
+          <input style="margin-left: 9.5%;" type="checkbox"> <label for="">10<sup>th</sup> Marksheet</label>
+          <input style="margin-left: 6.5%;" type="checkbox"> <label for="">Transfer Certificate</label>
+          <br>
+          <input type="checkbox"> <label for="Aadhar Card">Aadhar Card</label>
+          <input style="margin-left: 6.5%;" type="checkbox"> <label for="">12<sup>th</sup> Marksheet</label>
+          <input style="margin-left: 6.5%;" type="checkbox"> <label for=""> Diploma / Degree Certificate</label>
+          <p>The above document has been checked on : <input style="margin-left: 1%;" type="date"></p>
+          <br>
+          <hr>
+          
+
+
+
+
+
+
+
+<br><br><br><br>
+      </div>
+    </div>
+  </body>
+</html>
