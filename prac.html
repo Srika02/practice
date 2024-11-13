@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,6 +13,7 @@
       rel="stylesheet"
     />
     <style>
+
       @media screen and (max-width: 600px) {
         h1 {
           display: none;
@@ -42,6 +45,52 @@
           width: 100%;
         }
       }
+      @media screen and (max-width: 600px) {
+        .gridcont {
+          width: 100%;
+          display: none;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        .gridcont {
+          width: 100%;
+          display: none;
+        }
+      }
+      .gridcont {
+        grid-template-rows: auto;
+        display: grid;
+        row-gap: 10px;
+        background-color: grey;
+        padding: 5px;
+      }
+      .gridcont2 {
+        grid-template-columns: auto auto auto auto auto auto;
+        display: grid;
+        column-gap: 10px;
+        background-color: grey;
+        padding: 5px;f
+      }
+      .griditem {
+        background-color: darkmagenta;
+        border: 1px solid;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+      }
+      .griditem2 {
+        background-color: darkmagenta;
+        border: 1px solid;
+        padding: 10px 0;
+        font-size: 20px;
+        text-align: center;
+      }
+      .gridcont2 {
+        grid-column: 1 / span 3;
+      }
+      p {
+        padding-left: -100;
+      }
     </style>
   </head>
   <body>
@@ -65,29 +114,7 @@
         the mantle. As you begin your journey in the design industry, remember
         that creativity learns no boundaries, and the design field offers
         unlimited opportunities for innovation. Make sure you stay on top of
-        emerging trends and technologies. Build a network of like-minded
-        individuals, seek feedback from mentors, and share ideas with your team.
-        Don't underestimate your abilities. Never stop learning.Buff Creative
-        College is a recognized institution dedicated to encouraging and
-        empowering individuals in the field of Multimedia and Design. With a
-        specialization in Graphic Design, UX/UI Design, Digital Marketing, and
-        Animation Design. Buff Creative College offers extensive programs that
-        equip students with the skills, knowledge, and industry insights
-        necessary for a successful career in the design industry. The institute
-        is committed to providing a high-quality education that combines
-        theoretical foundations with practical skills. The curriculum is
-        designed to be relevant to current industry standards and emerging
-        trends, ensuring that students are well-prepared to tackle real-world
-        design challenges. Overall, Buff Creative College stands as a leading
-        institute in Multimedia and Design education, offering a wide and
-        immersive educational experience that prepares students for a rewarding
-        career in the design industry.As you begin your journey in the design
-        industry. Remember that creativity learns no boundaries, and the design
-        field offers unlimited opportunities for innovation. Make sure you stay
-        on top of emerging trends and technologies. Build a network of
-        like-minded individuals, seek feedback from mentors, and share ideas
-        with your team. Don't underestimate your abilities and let your
-        qualities shine through your work. Never stop learning.
+        emerging trends and technologies.
       </p>
       <p>
         Join Buff Creative College to elevate your artistic journey to refine
@@ -98,31 +125,9 @@
         the mantle. As you begin your journey in the design industry, remember
         that creativity learns no boundaries, and the design field offers
         unlimited opportunities for innovation. Make sure you stay on top of
-        emerging trends and technologies. Build a network of like-minded
-        individuals, seek feedback from mentors, and share ideas with your team.
-        Don't underestimate your abilities. Never stop learning.Buff Creative
-        College is a recognized institution dedicated to encouraging and
-        empowering individuals in the field of Multimedia and Design. With a
-        specialization in Graphic Design, UX/UI Design, Digital Marketing, and
-        Animation Design. Buff Creative College offers extensive programs that
-        equip students with the skills, knowledge, and industry insights
-        necessary for a successful career in the design industry. The institute
-        is committed to providing a high-quality education that combines
-        theoretical foundations with practical skills. The curriculum is
-        designed to be relevant to current industry standards and emerging
-        trends, ensuring that students are well-prepared to tackle real-world
-        design challenges. Overall, Buff Creative College stands as a leading
-        institute in Multimedia and Design education, offering a wide and
-        immersive educational experience that prepares students for a rewarding
-        career in the design industry.As you begin your journey in the design
-        industry. Remember that creativity learns no boundaries, and the design
-        field offers unlimited opportunities for innovation. Make sure you stay
-        on top of emerging trends and technologies. Build a network of
-        like-minded individuals, seek feedback from mentors, and share ideas
-        with your team. Don't underestimate your abilities and let your
-        qualities shine through your work. Never stop learning.
+        emerging trends and technologies.
       </p>
-      <p>
+      <p class="text-2xl">
         Join Buff Creative College to elevate your artistic journey to refine
         your craft, and unlock endless possibilities for your creative future.
         We assist you in developing a job where you are not reliant on others.
@@ -131,30 +136,39 @@
         the mantle. As you begin your journey in the design industry, remember
         that creativity learns no boundaries, and the design field offers
         unlimited opportunities for innovation. Make sure you stay on top of
-        emerging trends and technologies. Build a network of like-minded
-        individuals, seek feedback from mentors, and share ideas with your team.
-        Don't underestimate your abilities. Never stop learning.Buff Creative
-        College is a recognized institution dedicated to encouraging and
-        empowering individuals in the field of Multimedia and Design. With a
-        specialization in Graphic Design, UX/UI Design, Digital Marketing, and
-        Animation Design. Buff Creative College offers extensive programs that
-        equip students with the skills, knowledge, and industry insights
-        necessary for a successful career in the design industry. The institute
-        is committed to providing a high-quality education that combines
-        theoretical foundations with practical skills. The curriculum is
-        designed to be relevant to current industry standards and emerging
-        trends, ensuring that students are well-prepared to tackle real-world
-        design challenges. Overall, Buff Creative College stands as a leading
-        institute in Multimedia and Design education, offering a wide and
-        immersive educational experience that prepares students for a rewarding
-        career in the design industry.As you begin your journey in the design
-        industry. Remember that creativity learns no boundaries, and the design
-        field offers unlimited opportunities for innovation. Make sure you stay
-        on top of emerging trends and technologies. Build a network of
-        like-minded individuals, seek feedback from mentors, and share ideas
-        with your team. Don't underestimate your abilities and let your
-        qualities shine through your work. Never stop learning.
+        emerging trends and technologies.
       </p>
     </div>
+    <!-- <div class="gridcont">
+      <p class="griditem">1</p>
+      <p class="griditem">2</p>
+      <p class="griditem">3</p>
+      <p class="griditem">4</p>
+      <p class="griditem">5</p>
+      <p class="griditem">6</p>
+      <p class="griditem">7</p>
+      <p class="griditem">8</p>
+    </div> -->
+
+    <h3>Hi</h3>
+    <div class="gridcont2">
+      <p class="griditem2">1</p>
+      <p class="griditem2">2</p>
+      <p class="griditem2">3</p>
+      <p class="griditem2">4</p>
+      <p class="griditem2">5</p>
+      <p class="griditem2">6</p>
+      <p class="griditem2">7</p>
+      <p class="griditem2">8</p>
+      <p class="griditem2">1</p>
+      <p class="griditem2">2</p>
+      <p class="griditem2">3</p>
+      <p class="griditem2">4</p>
+      <p class="griditem2">5</p>
+      <p class="griditem2">6</p>
+      <p class="griditem2">7</p>
+      <p class="griditem2">8</p>
+    </div>
+    <div class="flex flex-wrap hover:flex-wrap-reverse">123 456 789</div>
   </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <a href="http://127.0.0.1:5500/about.html">A Tag here</a>
@@ -152,7 +153,45 @@
     ></iframe
     ><br />
     <video width="300" height="220" controls>
-      <source src="hhdd.mp4" type="video/mp4" />
-    </video>
+      <source src="hhdd.mp4" type="video/mp4" /></video
+    ><br /><br /><br /><br /><br />
+    <div class="flex flex-col">
+      <p class="w-[300px] order-1 md:order-2">1.aaa</p>
+      <p class="w-[300px] order-2 md:order-3">2.bbb</p>
+      <p class="w-[300px] order-3 md:order-1">2.ccc</p>
+    </div>
+    <p class="ordinal">1st</p>
+    <p class="ordinal slashed-zero tabular-nums ...">1234567890</p>
+    <p class="slashed-zero ...">0</p>
+    <p>1 <sup>st</sup></p>
+
+    <p class="tracking-tighter">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus id ab
+      ratione, !
+    </p>
+    <p class="tracking-nomral">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus id ab
+      ratione, !
+    </p>
+    <p class="tracking-wide">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus id ab
+      ratione, !
+    </p>
+    <p class="">
+      Lorem, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ipsum dolor sit amet consectetur
+      adipisicing elit. Delectus id ab ratione, Lorem ipsum dolor sit amet
+      consectetur adipisicing elit.
+    </p>
+    <p class="underline decoration-wavy">SRIKANTH</p>
+    <div>
+      <span
+        class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+      >
+        SRIKANTH
+      </span>
+      <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">SK</div>
+    </div>
+
+    <br /><br /><br /><br /><br />
   </body>
 </html>
