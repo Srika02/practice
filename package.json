@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "node": "^20.18.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
   }
 }
